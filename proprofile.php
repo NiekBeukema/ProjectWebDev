@@ -169,6 +169,6 @@ include('session.php');
 
     </div>
 
-    <b id="logout"><a href="incl/logout.php">Log Out</a></b>
+    <b id="logout"><a href="logout.php">Log Out</a></b>
 </body>
 </html>
