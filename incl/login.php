@@ -22,7 +22,7 @@ if(isset($_POST["submit"]))
         $password = md5($password);
 
 //Check username and password from database
-        $sql="SELECT uid FROM users WHERE username='$username' and password='$password'";
+        $sql="SELECT customer_id FROM customer WHERE inlognaam='$username' and wachtwoord='$password'";
         $result=mysqli_query($db,$sql);
         $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 
@@ -31,8 +31,18 @@ if(isset($_POST["submit"]))
 
         if(mysqli_num_rows($result) == 1)
         {
-            $_SESSION['username'] = $login_user; // Initializing Session
-            header("location: home.php"); // Redirecting To Other Page
+            switch($_SESSION['user_role']) {
+                case 0 :
+                    $_SESSION['username'] = $login_user; // Initializing Session
+                    header("location: profile.php"); // Redirecting To Other Page
+                case 1 :
+                    $_SESSION['username'] = $login_user; // Initializing Session
+                    header("location: proprofile.php"); // Redirecting To Other Page
+                case 2 :
+                    $_SESSION['username'] = $login_user; // Initializing Session
+                    header("location: admprofile.php"); // Redirecting To Other Page
+            }
+
         }else
         {
             $error = "Incorrect username or password.";
