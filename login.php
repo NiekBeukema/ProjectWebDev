@@ -1,57 +1,53 @@
 <?php
-session_start();
-include("connection.php"); //Establishing connection with our database
 
-$error = ""; //Variable for storing our errors.
-if(isset($_POST["submit"]))
+// establishing the MySQLi connection
+
+
+
+$con = mysqli_connect("localhost","root","","jematje");
+
+if (mysqli_connect_errno())
+
 {
-    if(empty($_POST["username"]) || empty($_POST["password"]))
-    {
-        $error = "Both fields are required.";
-    }else
-    {
-// Define $username and $password
-        $username=$_POST['gebruiker'];
-        $password=$_POST['wachtwoord'];
 
-// To protect from MySQL injection
-        $username = stripslashes($username);
-        $password = stripslashes($password);
-        $username = mysql_real_escape_string($username);
-        $password = mysql_real_escape_string($password);
-        $password = md5($password);
+    echo "MySQLi Connection was not established: " . mysqli_connect_error();
 
-//Check username and password from database
-        $sql="SELECT customer_id FROM customer WHERE inlognaam='$username' and wachtwoord='$password'";
-        $result=mysqli_query($db,$sql);
-        $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+}
 
-//If username and password exist in our database then create a session.
-//Otherwise echo error.
+// checking the user
 
-        if(mysqli_num_rows($result) == 1)
-        {
-            switch($_SESSION['user_role']) {
-                case 0 :
-                    $_SESSION['username'] = $login_user; // Initializing Session
-                    header("location: profile.php"); // Redirecting To Other Page
-                case 1 :
-                    $_SESSION['username'] = $login_user; // Initializing Session
-                    header("location: proprofile.php"); // Redirecting To Other Page
-                case 2 :
-                    $_SESSION['username'] = $login_user; // Initializing Session
-                    header("location: admprofile.php"); // Redirecting To Other Page
-            }
+if(isset($_POST['submit'])){
 
-        }else
-        {
-            $error = "Incorrect username or password.";
-        }
+$email = mysqli_real_escape_string($con,$_POST['gebruiker']);
 
-    }
+$pass = mysqli_real_escape_string($con,$_POST['wachtwoord']);
+
+$sel_user = "select * from gebruiker where inlognaam='$email' AND wachtwoord='$pass'";
+
+$run_user = mysqli_query($con, $sel_user);
+
+$check_user = mysqli_num_rows($run_user);
+
+$result = $run_user->fetch_fields();
+
+if($check_user>0){
+
+
+    $_SESSION['user_role']=$result['user_role'];
+    $_SESSION['user_firstname']=$result['voornaam'];
+    $_SESSION['user_lastname']=$result['achternaam'];
+    $_SESSION['user_name']=$email;
+
+echo "<script>window.open('index.php','_self')</script>";
+
+}
+
+else {
+
+echo "<script>alert('Email or password is not correct, try again!')</script>";
+
+}
+
 }
 
 ?>
-<script>
-    alert("logging in");
-</script>
