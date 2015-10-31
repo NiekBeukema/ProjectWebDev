@@ -1,133 +1,353 @@
-<?php
-
-    include('check.php');
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <title>SSS</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-    <title>Jumbotron Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Student Software Service</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">**USER** <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Customer Area</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-tags"></span> Products</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-off""></span> Log out</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Student Software Services</a>
+		</div>
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="index.php" class="active">Home</a></li>
+				<li><a href="catalogue.php">Catalogue</a></li>
+				<li><a href="cart.php">Shopping Cart</a></li>
+				<li><a href="support.php">Customer Support</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="nav-dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">**USER** <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Customer Area</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-tags"></span> Products</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#"><span class="glyphicon glyphicon-off""></span> Log out</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
 </nav>
+<!-- End Navigation -->
+    <!-- End Navigation -->
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
+    <div class="container main-container">
+        <div class="row">
 
-        <div class="page-header">
-            <h2>Latest Products</h2>
+        	<!-- Slider -->
+        	<div class="col-lg-9 col-md-12">
+                <div class="slider">
+                    <ul class="bxslider">
+                        <li>
+                            <a href="//PLACEHOLD.IT">
+                                <img src="img/Banner-Bitdefender.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="//PLACEHOLD.IT">
+                                <img src="img/Banner-Bitdefender.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="//PLACEHOLD.IT">
+                                <img src="img/Banner-Bitdefender.png" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Slider -->
+
+			<!-- Product Selection, visible only on large desktop -->
+            <div class="col-lg-3 visible-lg">
+                <div class="row text-center">
+                    <div class="col-lg-12 col-md-12 hero-feature">
+                        <div class="thumbnail">
+                        	<a href="detail.php" class="link-p first-p">
+		                    	<img src="img/Office2016Thumb.jpg" alt="">
+		                    </a>
+		                    <div class="caption prod-caption">
+		                        <h4><a href="detail.php">Placeholder</a></h4>
+		                        <p>Ik dacht zelf aan max 9 producten op de homepage, de naam+beschrijving+img+Prijs moet uit de detabees komen.</p>
+		                        <p>
+		                        	<div class="btn-group">
+			                        	<a href="#" class="btn btn-default">$420</a>
+			                        	<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+		                        	</div>
+		                        </p>
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Product Selection -->
         </div>
-        <img src="img/Banner-Bitdefender.png" alt="Chania" class="img-thumbnail">
-        <!--
-        Gebruik als hoogte 280 in bovengedeelte
-        200x200 voor product dozen
+
+        <div class="row">
+        	<div class="col-lg-3 col-md-3 col-sm-12">
+
+        		<!-- Categories -->
+        		<div class="col-lg-12 col-md-12 col-sm-6">
+	        		<div class="no-padding">
+	            		<span class="title">CATEGORIES</span>
+	            	</div>
+
+					<div id="main_menu">
+                        <div class="list-group panel panel-cat">
+                            <a href="#sub1" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Microsoft <i class="glyphicon glyphicon-menu-down"></i></a>
+                            <div class="collapse list-group-sub" id="sub1">
+								<a href="javascript:;" class="list-group-item">Subitem 1</a>
+                                <a href="javascript:;" class="list-group-item">Subitem 2</a>
+                                <a href="javascript:;" class="list-group-item">Subitem 3</a>
+                            </div>
+                            <a href="#" class="list-group-item" >Apple</a>
+                            <a href="#sub2" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Adobe <i class="glyphicon glyphicon-menu-down"></i></a>
+                            <div class="collapse list-group-sub" id="sub2">
+                                <a href="#" class="list-group-item">Subitem 1</a>
+                                <a href="#" class="list-group-item">Subitem 2</a>
+                                <a href="#" class="list-group-item">Subitem 3</a>
+                            </div>
+							</br>
+                            <a href="#" class="list-group-item" >Jetbrains</a>
+                            <a href="#" class="list-group-item" >Signavio</a>
+                            <a href="#" class="list-group-item" >Anti-Virus</a>
+                            <a href="#" class="list-group-item" >Cloudservices</a>
+                            <a href="#" class="list-group-item" >BackUp Software</a>
+                            <a href="#" class="list-group-item" >Development</a>
+                            <a href="#" class="list-group-item" >Statistics and research</a>
+                        </div>
+                    </div>
+
+				</div>
+				<!-- End Categories -->
+
+				<!-- Best Seller -->
+				<div class="col-lg-12 col-md-12 col-sm-6">
+					<div class="no-padding">
+	            		<span class="title">BEST SELLER</span>
+	            	</div>
+					<div class="hero-feature">
+		                <div class="thumbnail text-center">
+		                	<a href="detail.php" class="link-p">
+		                    	<img src="img/Office2016Thumb.jpg" alt="">
+		                	</a>
+		                    <div class="caption prod-caption">
+		                        <h4><a href="detail.php">Office 2016</a></h4>
+		                        <p>Fantastische product beschrijving maar dan in het engels!</p>
+		                        <p>
+		                        	<div class="btn-group">
+			                        	<a href="#" class="btn btn-default">$ 528.96</a>
+			                        	<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+		                        	</div>
+		                        </p>
+		                    </div>
+		                </div>
+		            </div>
+
+				</div>
+				<!-- End Best Seller -->
+
+        	</div>
+
+        	<div class="clearfix visible-sm"></div>
+
+			<!-- Recents -->
+        	<div class="col-lg-9 col-md-9 col-sm-12">
+        		<div class="col-lg-12 col-sm-12">
+            		<span class="title">RECENTLY ADDED</span>
+            	</div>
+	            <div class="col-lg-4 col-sm-4 hero-feature text-center">
+	                <div class="thumbnail">
+	                	<a href="detail.php" class="link-p">
+	                    	<img src="img/Office2016Thumb.jpg" alt="">
+	                	</a>
+	                    <div class="caption prod-caption">
+	                        <h4><a href="detail.php">Office 2016</a></h4>
+	                        <p>Fantastische product beschrijving maar dan in het engels!</p>
+	                        <p>
+	                        	<div class="btn-group">
+		                        	<a href="#" class="btn btn-default">$ 122.51</a>
+		                        	<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+	                        	</div>
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-lg-4 col-sm-4 hero-feature text-center">
+	                <div class="thumbnail">
+	                	<a href="detail.php" class="link-p">
+	                    	<img src="img/Office2016Thumb.jpg" alt="">
+	                	</a>
+	                    <div class="caption prod-caption">
+	                        <h4><a href="detail.php">Office 2016</a></h4>
+	                        <p>Fantastische product beschrijving maar dan in het engels!</p>
+	                        <p>
+	                        	<div class="btn-group">
+		                        	<a href="#" class="btn btn-default">$ 628.96</a>
+		                        	<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+	                        	</div>
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-lg-4 col-sm-4 hero-feature text-center">
+	                <div class="thumbnail">
+	                	<a href="detail.php" class="link-p">
+	                    	<img src="img/Office2016Thumb.jpg" alt="">
+	                	</a>
+	                    <div class="caption prod-caption">
+	                        <h4><a href="detail.php">Office 2016</a></h4>
+	                        <p>Fantastische product beschrijving maar dan in het engels!</p>
+	                        <p>
+	                        	<div class="btn-group">
+		                        	<a href="#" class="btn btn-default">$ 394.64</a>
+		                        	<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+	                        	</div>
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-lg-4 col-sm-4 hero-feature text-center">
+	                <div class="thumbnail">
+	                	<a href="detail.php" class="link-p">
+	                    	<img src="img/Office2016Thumb.jpg" alt="">
+	                	</a>
+	                    <div class="caption prod-caption">
+	                        <h4><a href="detail.php">Office 2016</a></h4>
+	                        <p>Fantastische product beschrijving maar dan in het engels!</p>
+	                        <p>
+	                        	<div class="btn-group">
+	                        		<a href="#" class="btn btn-default">$ 428.96</a>
+	                        		<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+	                        	</div>
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-lg-4 col-sm-4 hero-feature text-center">
+	                <div class="thumbnail">
+	                	<a href="detail.php" class="link-p">
+	                    	<img src="img/Office2016Thumb.jpg" alt="">
+	                	</a>
+	                    <div class="caption prod-caption">
+	                        <h4><a href="detail.php">Office 2016</a></h4>
+	                        <p>Fantastische product beschrijving maar dan in het engels!</p>
+	                        <p>
+	                        	<div class="btn-group">
+	                        		<a href="#" class="btn btn-default">$ 428.96</a>
+	                        		<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+	                        	</div>
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-lg-4 col-sm-4 hero-feature text-center">
+	                <div class="thumbnail">
+	                	<a href="detail.php" class="link-p">
+	                    	<img src="img/Office2016Thumb.jpg" alt="">
+	                	</a>
+	                    <div class="caption prod-caption">
+	                        <h4><a href="detail.php">Office 2016</a></h4>
+	                        <p>Fantastische product beschrijving maar dan in het engels!</p>
+	                        <p>
+	                        	<div class="btn-group">
+	                        		<a href="#" class="btn btn-default">$ 632.15</a>
+	                        		<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+	                        	</div>
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+        	</div>
+        	<!-- End Recents -->
+
+        	<div class="clearfix visible-sm"></div>
 
 
 
-        -->
-    </div>
-</div>
-
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Office 2016</h2>
-            <img src="img/Office2016Thumb.jpg" alt="Office2016" class="img-thumbnail"></br>
-            <p></br><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-    </div>
+	</div>
 
-    <hr>
-
-    <footer>
-        <p>&copy; Company 2014</p>
+	<footer>
+    	<div class="container">
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Information</h4>
+        			<ul>
+        				<li><a href="about.html">About Us</a></li>
+        				<li><a href="typography.html">Policy Privacy</a></li>
+        				<li><a href="typography.html">Terms and Conditions</a></li>
+        				<li><a href="typography.html">Shipping Methods</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Categories</h4>
+        			<ul>
+        				<li><a href="catalogue.html">Cras justo odio</a></li>
+        				<li><a href="catalogue.html">Dapibus ac facilisis in</a></li>
+        				<li><a href="catalogue.html">Morbi leo risus</a></li>
+        				<li><a href="catalogue.html">Porta ac consectetur ac</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Customer Service</h4>
+        			<ul>
+        				<li><a href="contact.html">Contact Us</a></li>
+        				<li><a href="#">YM: cs_</a></li>
+        				<li><a href="#">Phone: +6281234567891</a></li>
+        				<li><a href="#">Email: cs.domain@domain.tld</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Follow Us</h4>
+        			<ul class="social">
+        				<li><a href="#">Google Plus</a></li>
+        				<li><a href="#">Facebook</a></li>
+        				<li><a href="#">Twitter</a></li>
+        				<li><a href="#">RSS Feed</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+        <div class="navbar-inverse text-center copyright">
+        	Copyright &copy; 2015 Poepchinees All right reserved
+        </div>
     </footer>
-</div> <!-- /container -->
 
+    <a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
+    	<i class="fa fa-angle-double-up"></i>
+    </a>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/docs.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.blImageCenter.js"></script>
+    <script src="js/animatie.js"></script>
 </body>
 </html>
