@@ -1,4 +1,4 @@
-<?php include "login2.0.php";
+<?php include "login.php";
 
 if(isset($_SESSION['login_user'])){
     header("location: profile.php");
@@ -58,7 +58,7 @@ if(isset($_SESSION['login_user'])){
 </head>
 <body>
 <div id="Sign-In">
-    <form action="login2.0.php" method="post">
+    <form action="login.php" method="post">
 
         <div class="input-control modern text iconic">
             <input type="text" name="gebruiker">

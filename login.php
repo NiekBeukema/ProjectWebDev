@@ -28,11 +28,11 @@ $run_user = mysqli_query($con, $sel_user);
 
 $check_user = mysqli_num_rows($run_user);
 
-$result = $run_user->fetch_fields();
+$result = $run_user->fetch_array();
 
 if($check_user>0){
 
-
+    session_start();
     $_SESSION['user_role']=$result['user_role'];
     $_SESSION['user_firstname']=$result['voornaam'];
     $_SESSION['user_lastname']=$result['achternaam'];
