@@ -1,21 +1,19 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Register</title>
-    <script src="js/jquery.js"></script>
+    <title>SSS</title>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+
+
 <!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -43,21 +41,48 @@
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Customer Area</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-tags"></span> Products</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-off""></span> Log out</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span> Log out</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<!-- End Navigation -->
-</br>
+<br/>
 <div class="container">
 
+    <div class="col-lg-4 col-md-4 col-sm-4">
+
+        <!-- Login Form -->
+        <form action="login.php" method="post" id="login">
+            <div class="white-container">
+                <span class="title">ALREADY REGISTERED ?</span>
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group login-input">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <br>
+                        <div class="input-group login-input">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-primary pull-right"><i class="fa fa-long-arrow-right"></i> Login</button>
+                    </div>
+                </form>
+            </div>
+            <!-- End Login Form -->
+
+    </div>
     <div class="col-lg-8 col-md-8 col-sm-8">
         <div class="white-container">
             <span class="title">REGISTER</span>
-            <p>Register below.</p>
 
             <!-- Form Register -->
             <form action="registration.php" method="post" id="register">
@@ -87,68 +112,31 @@
                     <input type="password" class="form-control" name="confirm_password"><br clear="all"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label for="user_role">Activation Code</label>
-                    <input type="text" class="form-control" name="user_role"><br clear="all"/>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label for="user_role">Activation Code</label>
+                    <label for="user_role">City</label>
                     <input type="text" class="form-control" name="plaats"><br clear="all"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label for="user_role">Activation Code</label>
+                    <label for="user_role">PostCode</label>
                     <input type="text" class="form-control" name="postcode"><br clear="all"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label for="user_role">Activation Code</label>
+                    <label for="user_role">Adress</label>
                     <input type="text" class="form-control" name="straatnaam"><br clear="all"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label for="user_role">Activation Code</label>
+                    <label for="user_role">PhoneNumber</label>
                     <input type="text" class="form-control" name="telefoonnummer"><br clear="all"/>
                 </div>
                 <div class="clearfix"></div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> I agree with the Terms and Conditions.
-                    </label>
-                </div>
                 <button type="submit" class="btn btn-danger">Register</button>
                 </br>
             </form>
-            </br>
+    </br>
             <!-- End Form Register -->
         </div>
 
     </div>
 
-    <div class="col-lg-4 col-md-4 col-sm-4">
-
-        <!-- Login Form -->
-        <div class="white-container">
-            <span class="title">ALREADY REGISTERED ?</span>
-            <form role="form">
-                <div class="form-group">
-                    <div class="input-group login-input">
-                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                        <input type="text" class="form-control" placeholder="Email">
-                    </div>
-                    <br>
-                    <div class="input-group login-input">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> Remember me
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-sm btn-primary pull-right"><i class="fa fa-long-arrow-right"></i> Login</button>
-                </div>
-            </form>
-        </div>
-        <!-- End Login Form -->
-
-    </div>
 
 </div>
 
