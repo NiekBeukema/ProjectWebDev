@@ -44,7 +44,7 @@
 						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Customer Area</a></li>
 						<li><a href="#"><span class="glyphicon glyphicon-tags"></span> Products</a></li>
 						<li role="separator" class="divider"></li>
-						<li><a href="#"><span class="glyphicon glyphicon-off""></span> Log out</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-off"></span> Log out</a></li>
 					</ul>
 				</li>
 			</ul>

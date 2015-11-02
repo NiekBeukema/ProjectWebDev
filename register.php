@@ -53,7 +53,7 @@
 
     <div class="col-lg-4 col-md-4 col-sm-4">
 
-        <!-- Login Form -->
+        <!-- Login Form    -->
         <form action="login.php" method="post" id="login">
             <div class="white-container">
                 <span class="title">ALREADY REGISTERED ?</span>
@@ -132,11 +132,10 @@
                 </br>
             </form>
     </br>
-            <!-- End Form Register -->
+            <!-- End Form Registe5r -->
         </div>
 
     </div>
-
 
 </div>
 
