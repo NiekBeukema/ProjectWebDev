@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Register</title>
+    <script src="js/jquery.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -57,30 +60,51 @@
             <p>Register below.</p>
 
             <!-- Form Register -->
-            <br action="#">
+            <form action="registration.php" method="post" id="register">
+                <div style="background-color: red" id="error"></div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label for="first_name">First Name (*)</label>
-                    <input type="text" class="form-control" id="first_name"><br clear="all"/>
+                    <input type="text" class="form-control" name="first_name"><br clear="all"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label for="last_name">Last Name (*)</label>
-                    <input type="text" class="form-control" id="last_name"><br clear="all"/>
+                    <input type="text" class="form-control" name="last_name"><br clear="all"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label for="email">Email (*)</label>
-                    <input type="text" class="form-control" id="email"><br clear="all"/>
+                    <input type="text" class="form-control" name="email"><br clear="all"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label for="username">Confirm Email (*)</label>
-                    <input type="text" class="form-control" id="username"><br clear="all"/>
+                    <input type="text" class="form-control" name="username"><br clear="all"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label for="password">Password (*)</label>
-                    <input type="password" class="form-control" id="password"><br clear="all"/>
+                    <input type="password" class="form-control" name="password"><br clear="all"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label for="confirm_password">Confirm Password (*)</label>
-                    <input type="password" class="form-control" id="confirm_password"><br clear="all"/>
+                    <input type="password" class="form-control" name="confirm_password"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="user_role">Activation Code</label>
+                    <input type="text" class="form-control" name="user_role"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="user_role">Activation Code</label>
+                    <input type="text" class="form-control" name="plaats"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="user_role">Activation Code</label>
+                    <input type="text" class="form-control" name="postcode"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="user_role">Activation Code</label>
+                    <input type="text" class="form-control" name="straatnaam"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="user_role">Activation Code</label>
+                    <input type="text" class="form-control" name="telefoonnummer"><br clear="all"/>
                 </div>
                 <div class="clearfix"></div>
                 <div class="checkbox">
@@ -88,7 +112,7 @@
                         <input type="checkbox"> I agree with the Terms and Conditions.
                     </label>
                 </div>
-                <button class="btn btn-danger">Register</button>
+                <button type="submit" class="btn btn-danger">Register</button>
                 </br>
             </form>
             </br>
