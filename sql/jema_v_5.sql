@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 03 nov 2015 om 09:51
+-- Gegenereerd op: 03 nov 2015 om 10:15
 -- Serverversie: 10.0.17-MariaDB
 -- PHP-versie: 5.5.30
 
@@ -39,7 +39,7 @@ CREATE TABLE `bestaat_uit` (
 
 CREATE TABLE `gebruiker` (
   `gebruiker id` int(8) NOT NULL,
-  `user_role` varchar(10) NOT NULL,
+  `user_role` int(1) NOT NULL,
   `voornaam` varchar(15) NOT NULL,
   `achternaam` varchar(15) NOT NULL,
   `inlognaam` varchar(15) NOT NULL,
@@ -56,7 +56,7 @@ CREATE TABLE `gebruiker` (
 --
 
 INSERT INTO `gebruiker` (`gebruiker id`, `user_role`, `voornaam`, `achternaam`, `inlognaam`, `wachtwoord`, `plaats`, `straatnaam`, `postcode`, `telefoonnummer`, `e_mail`) VALUES
-(1, 'customer', 'henk', 'henkinson', 'henk', 'henk', 'henkstad', 'kampakkers', '9531HV', 599236503, 'henkinson@hotmail.com');
+(1, 0, 'henk', 'henkinson', 'henk', 'henk', 'henkstad', 'kampakkers', '9531HV', 599236503, 'henkinson@hotmail.com');
 
 -- --------------------------------------------------------
 
