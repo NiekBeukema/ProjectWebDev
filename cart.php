@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from demo.18maret.com/demo/mimity/v1.3/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Oct 2015 22:51:35 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
