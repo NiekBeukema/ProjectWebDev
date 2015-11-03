@@ -37,7 +37,7 @@ $_SESSION['straatnaam']= $row['straatnaam'];
 $_SESSION['telefoonnummer']= $row['telefoonnummer'];
 $_SESSION['e_mail']= $row['e_mail'];
 $_SESSION['postcode']= $row['postcode'];
-$_SESSION['postcode']= $row['postcode'];
+$_SESSION['voornaam']= $row['voornaam'];
 
 
 echo "<script>window.open('index.php','_self')</script>";

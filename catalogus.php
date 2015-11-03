@@ -1,3 +1,5 @@
+
+
 <?php include('check.php');
 ?>
 
@@ -50,221 +52,161 @@
             </ul>
         </div>
     </div>
+</nav>
+<!-- End Navigation -->
+<!-- End Navigation -->
+
+<div class="container main-container">
+    <div class="row">
+
+
+
+    </div>
 
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12">
 
-    <div class="col-lg-12 col-md-12 col-sm-6">
-        <div class="no-padding">
-            <span class="title">CATEGORIES</span>
-        </div>
-        <div id="nav">
-        <div id="main_menu">
-            <div class="list-group panel panel-cat">
-                <a href="#sub1" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Microsoft <i class="glyphicon glyphicon-menu-down"></i></a>
-                <div class="collapse list-group-sub" id="sub1">
-                    <a href="javascript:;" class="list-group-item">Subitem 1</a>
-                    <a href="javascript:;" class="list-group-item">Subitem 2</a>
-                    <a href="javascript:;" class="list-group-item">Subitem 3</a>
+            <!-- Categories -->
+            <div class="col-lg-12 col-md-12 col-sm-6">
+                <div class="no-padding">
+                    <span class="title">CATEGORIES</span>
                 </div>
-                <a href="#" class="list-group-item" >Apple</a>
-                <a href="#sub2" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Adobe <i class="glyphicon glyphicon-menu-down"></i></a>
-                <div class="collapse list-group-sub" id="sub2">
-                    <a href="#" class="list-group-item">Subitem 1</a>
-                    <a href="#" class="list-group-item">Subitem 2</a>
-                    <a href="#" class="list-group-item">Subitem 3</a>
-                </div>
-                </br>
-                <a href="#" class="list-group-item" >Jetbrains</a>
-                <a href="#" class="list-group-item" >Signavio</a>
-                <a href="#" class="list-group-item" >Anti-Virus</a>
-                <a href="#" class="list-group-item" >Cloudservices</a>
-                <a href="#" class="list-group-item" >BackUp Software</a>
-                <a href="#" class="list-group-item" >Development</a>
-                <a href="#" class="list-group-item" >Statistics and research</a>
-            </div>
-        </div>
 
-    </div>
-    </div>
-        </div>
-
-    </div>
-    <!-- End Categories -->
-
-
-
-    <div class="clearfix visible-sm"></div>
-
-    <!-- Recents -->
-    <div class="col-lg-9 col-md-9 col-sm-12">
-        <div class="col-lg-12 col-sm-12">
-            <span class="title">RECENTLY ADDED</span>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-            <div class="thumbnail">
-                <a href="detail.php" class="link-p">
-                    <img src="img/Office2016Thumb.jpg" alt="">
-                </a>
-                <div class="caption prod-caption">
-                    <h4><a href="detail.php">Office 2016</a></h4>
-                    <p>Fantastische product beschrijving maar dan in het engels!</p>
-                    <p>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-default">$ 122.51</a>
-                        <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+                <div id="main_menu">
+                    <div class="list-group panel panel-cat">
+                        <a href="#sub1" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Microsoft <i class="glyphicon glyphicon-menu-down"></i></a>
+                        <div class="collapse list-group-sub" id="sub1">
+                            <a href="javascript:;" class="list-group-item">Subitem 1</a>
+                            <a href="javascript:;" class="list-group-item">Subitem 2</a>
+                            <a href="javascript:;" class="list-group-item">Subitem 3</a>
+                        </div>
+                        <a href="#" class="list-group-item" >Apple</a>
+                        <a href="#sub2" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Adobe <i class="glyphicon glyphicon-menu-down"></i></a>
+                        <div class="collapse list-group-sub" id="sub2">
+                            <a href="#" class="list-group-item">Subitem 1</a>
+                            <a href="#" class="list-group-item">Subitem 2</a>
+                            <a href="#" class="list-group-item">Subitem 3</a>
+                        </div>
+                        </br>
+                        <a href="#" class="list-group-item" >Jetbrains</a>
+                        <a href="#" class="list-group-item" >Signavio</a>
+                        <a href="#" class="list-group-item" >Anti-Virus</a>
+                        <a href="#" class="list-group-item" >Cloudservices</a>
+                        <a href="#" class="list-group-item" >BackUp Software</a>
+                        <a href="#" class="list-group-item" >Development</a>
+                        <a href="#" class="list-group-item" >Statistics and research</a>
                     </div>
-                    </p>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-            <div class="thumbnail">
-                <a href="detail.php" class="link-p">
-                    <img src="img/Office2016Thumb.jpg" alt="">
-                </a>
-                <div class="caption prod-caption">
-                    <h4><a href="detail.php">Office 2016</a></h4>
-                    <p>Fantastische product beschrijving maar dan in het engels!</p>
-                    <p>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-default">$ 628.96</a>
-                        <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-            <div class="thumbnail">
-                <a href="detail.php" class="link-p">
-                    <img src="img/Office2016Thumb.jpg" alt="">
-                </a>
-                <div class="caption prod-caption">
-                    <h4><a href="detail.php">Office 2016</a></h4>
-                    <p>Fantastische product beschrijving maar dan in het engels!</p>
-                    <p>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-default">$ 394.64</a>
-                        <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-            <div class="thumbnail">
-                <a href="detail.php" class="link-p">
-                    <img src="img/Office2016Thumb.jpg" alt="">
-                </a>
-                <div class="caption prod-caption">
-                    <h4><a href="detail.php">Office 2016</a></h4>
-                    <p>Fantastische product beschrijving maar dan in het engels!</p>
-                    <p>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-default">$ 428.96</a>
-                        <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-            <div class="thumbnail">
-                <a href="detail.php" class="link-p">
-                    <img src="img/Office2016Thumb.jpg" alt="">
-                </a>
-                <div class="caption prod-caption">
-                    <h4><a href="detail.php">Office 2016</a></h4>
-                    <p>Fantastische product beschrijving maar dan in het engels!</p>
-                    <p>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-default">$ 428.96</a>
-                        <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-            <div class="thumbnail">
-                <a href="detail.php" class="link-p">
-                    <img src="img/Office2016Thumb.jpg" alt="">
-                </a>
-                <div class="caption prod-caption">
-                    <h4><a href="detail.php">Office 2016</a></h4>
-                    <p>Fantastische product beschrijving maar dan in het engels!</p>
-                    <p>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-default">$ 632.15</a>
-                        <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Recents -->
 
-    <div class="clearfix visible-sm"></div>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Best Seller -->
+            <div class="col-lg-12 col-md-12 col-sm-6">
+
+
+            </div>
+            <!-- End Best Seller -->
+
+        </div>
+
+        <div class="clearfix visible-sm"></div>
+
+        <!-- Recents -->
+        <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="col-lg-12 col-sm-12">
+                <span class="title">CATALOGUS</span>
+            </div>
+            <?php
+            try{
+                $sql="SELECT * FROM product";
+                $result=mysqli_query($db,$sql);
+                //$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+                while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+                    echo " <div class=\"col-lg-4 col-sm-4 hero-feature text-center\">
+                <div class=\"thumbnail\">
+                    <a href=\"detail.php\" class=\"link-p\">
+                        <img src=\"img/Office2016Thumb.jpg\" alt=\"\">
+                    </a>
+                    <div class=\"caption prod-caption\">
+                        <h4><a href=\"detail.php\">{$row["product_naam"]}</a></h4>
+                        <p>Klik op de afbeelding voor meer informatie!</p>
+                        <p>
+                        <div class=\"btn-group\">
+                            <a href=\"#\" class=\"btn btn-default\">€{$row["prijs"]}</a>
+                            <a href=\"#\" class=\"btn btn-primary\"><i class=\"fa fa-shopping-cart\"></i> Buy</a>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>";
+                }
+            }
+            catch(Exception $e){
+                echo 'Caught exception: ',  $e->getMessage(), "\n";
+            }
+            print_r($row);
+            ?>
+        </div>
+        <!-- End Recents -->
+
+        <div class="clearfix visible-sm"></div>
 
 
 
     </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="column">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Policy Privacy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Shipping Methods</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Adress: Over the rainbow</a></li>
+                    <li><a href="#">Phone: +31504201337</a></li>
+                    <li><a href="#">Email: poepchinees@outlook.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="column">
+                <h4>Follow Us</h4>
+                <ul class="social">
+                    <li><a href="#">Google Plus</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <div class="navbar-inverse text-center copyright">
+        Copyright &copy; 2015 Poepchinees All right reserved
+    </div>
+</footer>
 
+<a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
+    <i class="fa fa-angle-double-up"></i>
+</a>
 
-
-
-    <footer>
-        <div class="container">
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="column">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Policy Privacy</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
-                        <li><a href="#">Shipping Methods</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="column">
-                    <h4>Customer Service</h4>
-                    <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Adress: Over the rainbow</a></li>
-                        <li><a href="#">Phone: +31504201337</a></li>
-                        <li><a href="#">Email: poepchinees@outlook.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="column">
-                    <h4>Follow Us</h4>
-                    <ul class="social">
-                        <li><a href="#">Google Plus</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">RSS Feed</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="navbar-inverse text-center copyright">
-            Copyright &copy; 2015 Poepchinees All right reserved
-        </div>
-    </footer>
-
-    <a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
-        <i class="fa fa-angle-double-up"></i>
-    </a>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/jquery.blImageCenter.js"></script>
-    <script src="js/animatie.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.blImageCenter.js"></script>
+<script src="js/animatie.js"></script>
 </body>
 </html>
+

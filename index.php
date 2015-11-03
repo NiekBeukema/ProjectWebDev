@@ -38,7 +38,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['inlognaam'] . " " . $_SESSION['postcode'];?> <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['voornaam'] . " " . $_SESSION['achternaam'];?> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Customer Area</a></li>
