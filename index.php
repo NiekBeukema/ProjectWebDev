@@ -34,7 +34,7 @@
 				<li><a href="index.php" class="active">Home</a></li>
 				<li><a href="catalogue.php">Catalogue</a></li>
 				<li><a href="cart.php">Shopping Cart</a></li>
-				<li><a href="support.php">Customer Support</a></li>
+				<li><a href="contact_form.php">Customer Support</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-dropdown">
