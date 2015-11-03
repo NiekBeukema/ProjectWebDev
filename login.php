@@ -1,62 +1,54 @@
+
+
 <?php
-session_start();
+// establishing the MySQLi connection
 include("connection.php"); //Establishing connection with our database
+session_start();
 
-$error = ""; //Variable for storing our errors.
-if(isset($_POST["submit"]))
+if (mysqli_connect_errno())
+
 {
-    if(empty($_POST["username"]) || empty($_POST["password"]))
-    {
-        $error = "Both fields are required.";
-    }else
-    {
-// Define $username and $password
-        $username=$_POST['gebruiker'];
-        $password=$_POST['wachtwoord'];
 
-// To protect from MySQL injection
-        $username = stripslashes($username);
-        $password = stripslashes($password);
-        $username = mysql_real_escape_string($username);
-        $password = mysql_real_escape_string($password);
-        $password = md5($password);
+    echo "MySQLi Connection was not established: " . mysqli_connect_error();
 
-//Check username and password from database
-        try{
-            $sql="SELECT customer_id FROM gebruiker WHERE inlognaam='$username' and wachtwoord='$password'";
-            $result=mysqli_query($db,$sql);
-            $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-            echo "<script type='text/javascript'>alert('{$row['user_role']}');</script>";
-        }
+}
 
-        catch(Exception $e){
-            echo 'Caught exception: ',  $e->getMessage(), "\n";
-        }
+// checking the user
+
+if(isset($_POST['submit'])){
+
+    $username = mysqli_real_escape_string($db,$_POST['gebruiker']);
+
+$password = mysqli_real_escape_string($db,$_POST['wachtwoord']);
+
+$sel_user = "select * from gebruiker where wachtwoord='$password' AND inlognaam='$username'";
+
+$run_user = mysqli_query($db, $sel_user);
+
+$check_user = mysqli_num_rows($run_user);
+$row =mysqli_fetch_array($run_user,MYSQLI_ASSOC);
+
+if($check_user>0){
+
+$_SESSION['inlognaam']=$username;
+$_SESSION['achternaam']= $row['achternaam'];
+$_SESSION['plaats']= $row['plaats'];
+$_SESSION['straatnaam']= $row['straatnaam'];
+$_SESSION['telefoonnummer']= $row['telefoonnummer'];
+$_SESSION['e_mail']= $row['e_mail'];
+$_SESSION['postcode']= $row['postcode'];
+$_SESSION['postcode']= $row['postcode'];
 
 
-//If username and password exist in our database then create a session.
-//Otherwise echo error.
+echo "<script>window.open('index.php','_self')</script>";
 
-        if(mysqli_num_rows($result) == 1)
-        {
-            switch($row['user_role']) {
-                case 0 :
-                    $_SESSION['username'] = $login_user; // Initializing Session
-                    header("location: profile.php"); // Redirecting To Other Page
-                case 1 :
-                    $_SESSION['username'] = $login_user; // Initializing Session
-                    header("location: proprofile.php"); // Redirecting To Other Page
-                case 2 :
-                    $_SESSION['username'] = $login_user; // Initializing Session
-                    header("location: admprofile.php"); // Redirecting To Other Page
-            }
+}
 
-        }else
-        {
-            $error = "Incorrect username or password.";
-        }
+else {
 
-    }
+echo "<script>alert('Email or password is not correct, try again!')</script>";
+
+}
 
 }
 ?>
