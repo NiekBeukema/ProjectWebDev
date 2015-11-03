@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="catalogue.php">Catalogue</a></li>
+                <li><a href="catalogus.php">Catalogue</a></li>
                 <li><a href="cart.php">Shopping Cart</a></li>
                 <li><a href="contact_form.php">Customer Support</a></li>
             </ul>
@@ -111,35 +111,35 @@
 
             <!-- Categories -->
             <div class="col-lg-12 col-md-12 col-sm-6">
-                <div class="no-padding">
-                    <span class="title">CATEGORIES</span>
-                </div>
-
-                <div id="main_menu">
-                    <div class="list-group panel panel-cat">
-                        <a href="#sub1" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Microsoft <i class="glyphicon glyphicon-menu-down"></i></a>
-                        <div class="collapse list-group-sub" id="sub1">
-                            <a href="javascript:;" class="list-group-item">Subitem 1</a>
-                            <a href="javascript:;" class="list-group-item">Subitem 2</a>
-                            <a href="javascript:;" class="list-group-item">Subitem 3</a>
-                        </div>
-                        <a href="#" class="list-group-item" >Apple</a>
-                        <a href="#sub2" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Adobe <i class="glyphicon glyphicon-menu-down"></i></a>
-                        <div class="collapse list-group-sub" id="sub2">
-                            <a href="#" class="list-group-item">Subitem 1</a>
-                            <a href="#" class="list-group-item">Subitem 2</a>
-                            <a href="#" class="list-group-item">Subitem 3</a>
-                        </div>
-                        </br>
-                        <a href="#" class="list-group-item" >Jetbrains</a>
-                        <a href="#" class="list-group-item" >Signavio</a>
-                        <a href="#" class="list-group-item" >Anti-Virus</a>
-                        <a href="#" class="list-group-item" >Cloudservices</a>
-                        <a href="#" class="list-group-item" >BackUp Software</a>
-                        <a href="#" class="list-group-item" >Development</a>
-                        <a href="#" class="list-group-item" >Statistics and research</a>
+                    <div class="no-padding">
+                        <span class="title">CATEGORIES</span>
                     </div>
-                </div>
+
+                    <div id="main_menu">
+                        <div class="list-group panel panel-cat">
+                            <a href="#sub1" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Microsoft <i class="glyphicon glyphicon-menu-down"></i></a>
+                            <div class="collapse list-group-sub" id="sub1">
+                                <a href="javascript:;" class="list-group-item">Subitem 1</a>
+                                <a href="javascript:;" class="list-group-item">Subitem 2</a>
+                                <a href="javascript:;" class="list-group-item">Subitem 3</a>
+                            </div>
+                            <a href="#" class="list-group-item" >Apple</a>
+                            <a href="#sub2" class="list-group-item" data-toggle="collapse" data-parent="#main_menu">Adobe <i class="glyphicon glyphicon-menu-down"></i></a>
+                            <div class="collapse list-group-sub" id="sub2">
+                                <a href="#" class="list-group-item">Subitem 1</a>
+                                <a href="#" class="list-group-item">Subitem 2</a>
+                                <a href="#" class="list-group-item">Subitem 3</a>
+                            </div>
+                            </br>
+                            <a href="#" class="list-group-item" >Jetbrains</a>
+                            <a href="#" class="list-group-item" >Signavio</a>
+                            <a href="#" class="list-group-item" >Anti-Virus</a>
+                            <a href="#" class="list-group-item" >Cloudservices</a>
+                            <a href="#" class="list-group-item" >BackUp Software</a>
+                            <a href="#" class="list-group-item" >Development</a>
+                            <a href="#" class="list-group-item" >Statistics and research</a>
+                        </div>
+                    </div>
 
             </div>
             <!-- End Categories -->

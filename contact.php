@@ -2,6 +2,7 @@
 $field_name = $_POST['cf_name'];
 $field_email = $_POST['cf_email'];
 $field_message = $_POST['cf_message'];
+$field_submit = $_POST['submit'];
 
 $mail_to = 'thomkroezen@live.nl';
 $subject = 'Message from a site visitor '.$field_name;
@@ -15,18 +16,14 @@ $headers .= 'Reply-To: '.$field_email."\r\n";
 
 $mail_status = mail($mail_to, $subject, $body_message, $headers);
 
-if ($mail_status) { ?>
-    <script language="javascript" type="text/javascript">
-        alert('Thank you for the message. We will contact you shortly.');
-        window.location = 'index.php';
-    </script>
-    <?php
+if (isset($_POST['submit'])){
+    if (isset)
 }
-else { ?>
-    <script language="javascript" type="text/javascript">
-        alert('Message failed. Please, send an email to thomkroezen@live.nl');
-        window.location = 'contact_page.html';
-    </script>
-    <?php
+
+
+else {
+    echo "error you haven`t filled in all the fields correctly.";
+    //header ('location: contact_form.php');
+
 }
-?>
+

@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.php" >Home</a></li>
-                <li><a href="catalogue.php">Catalogue</a></li>
+                <li><a href="catalogus.php">Catalogue</a></li>
                 <li><a href="cart.php">Shopping Cart</a></li>
                 <li><a href="support.php" class="active">Customer Support</a></li>
             </ul>
@@ -49,31 +49,28 @@
     </div>
 </nav>
 <div class="container">
-    <h1>Customer Support</h1>
-        <form action="contact.php" method="post">
-            Your name<br>
-            <input type="text" name="cf_name"><br>
-            Your e-mail<br>
-            <input type="text" name="cf_email"><br>
-            how can we help you?<br>
-            <textarea name="cf_message"></textarea><br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Clear">
-        </form>
+    <h2>Support:</h2>
 
+    <form action="contact.php" method="POST" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="cf_name" ><br>
+        E-mail:<br>
+        <input type="text" name="cf_mail" ><br>
+        Comment:<br>
+        <input type="text" name="cf_message"  size="50"><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="Reset">
+    </form>
 
-<div class="col-lg-3 col-md-3 col-sm-6">
-    <div class="column">
+    <ul>
 
-        <ul>
-
-            <li><h3>Adress: ijsselstraat 40B, 9725GG, Groningen</h3></a></li>
+            <li><h3>Adress: ijsselstraat 40B, 9725GG, Groningen</h3></li>
             <li><h3>Phone: +31504201337</h3></li>
 
         </ul>
     </div>
-</div>
-    </div>
+
+
 
     <footer>
         <div class="container">
