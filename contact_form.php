@@ -50,13 +50,13 @@
 </nav>
 <div class="container">
     <h1>Customer Support</h1>
-        <form action="contact.php" method="post">
+        <form action="contact.php" method="post" id="contact">
             Your name<br>
-            <input type="text" name="cf_name"><br>
+            <input type="text" class="form-control" name="cf_name"><br clear="all"/>
             Your e-mail<br>
-            <input type="text" name="cf_email"><br>
+            <input type="text" class="form-control" name="cd_email"><br clear="all"/>
             how can we help you?<br>
-            <textarea name="cf_message"></textarea><br>
+            <textarea class="form-contorl" name="cf_message"></textarea><br>
             <input type="submit" value="Send">
             <input type="reset" value="Clear">
         </form>
