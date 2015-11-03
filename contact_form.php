@@ -55,7 +55,7 @@
             <input type="text" name="cf_name"><br>
             Your e-mail<br>
             <input type="text" name="cf_email"><br>
-            <br>
+            how can we help you?<br>
             <textarea name="cf_message"></textarea><br>
             <input type="submit" value="Send">
             <input type="reset" value="Clear">
