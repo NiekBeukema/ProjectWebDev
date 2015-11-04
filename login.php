@@ -40,6 +40,7 @@ $_SESSION['postcode']= $row['postcode'];
 $_SESSION['voornaam']= $row['voornaam'];
 
 
+
 echo "<script>window.open('index.php','_self')</script>";
 
 }

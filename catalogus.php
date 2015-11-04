@@ -39,22 +39,43 @@
                 <li><a href="contact_form.php">Customer Support</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php //echo $_SESSION['user_firstname'] . " " . $_SESSION['user_lastname'];?> <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Customer Area</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-tags"></span> Products</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-off"></span> Log out</a></li>
+                <?php
+                if($loggedin == true){
+                    echo "<li class=\"nav-dropdown\">
+                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">";
+                    echo $_SESSION['voornaam'] . " " . $_SESSION['achternaam'];
+                    echo "
+                        <span class=\"caret\"></span></a>
+                    <ul class=\"dropdown-menu\">
+                        <li><a href=\"#\"><span class=\"glyphicon glyphicon-shopping-cart\"></span> Shopping Cart</a></li>
+                        <li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> Customer Area</a></li>
+                        <li><a href=\"#\"><span class=\"glyphicon glyphicon-tags\"></span> Products</a></li>
+                        <li role=\"separator\" class=\"divider\"></li>
+                        <li><a href=\"logout.php\"><span class=\"glyphicon glyphicon-off\"></span> Log out</a></li>
                     </ul>
                 </li>
+                    ";
+                } else {
+                    echo "<li>
+                            <a href=\"testlogin.php\" class=\"btn btn-success\"><i class=\"glyphicon glyphicon-user\"></i> LOG IN </a>
+                           </li>
+                             <li>
+                            <a href=\"register.php.php\" class=\"btn btn-warning\"><i class=\"glyphicon glyphicon-user\"></i> REGISTER </a>
+                           </li>
+                    ";
+                }
+
+
+
+                ?>
+
+
             </ul>
         </div>
     </div>
 </nav>
 <!-- End Navigation -->
-<!-- End Navigation -->
+
 
 <div class="container main-container">
     <div class="row">
